@@ -22,6 +22,7 @@ NEXT_PUBLIC_SUPABASE_URL=<your_url>
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<you_anon_key>
 ```
 
+[!IMPORTANT]
 **Inside your supabase project create a table with the name "users" and enable Realtime option**
 
 
