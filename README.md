@@ -14,6 +14,15 @@ pnpm dev
 bun dev
 ```
 
+## Create env file for supabase
+
+.env.local file
+```bash
+NEXT_PUBLIC_SUPABASE_URL=<your_url>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<you_anon_key>
+```
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
