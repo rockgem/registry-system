@@ -14,6 +14,8 @@ pnpm dev
 bun dev
 ```
 
+>[!IMPORTANT]
+>Setup your the supabase database
 ## Create env file for supabase
 
 .env.local file
