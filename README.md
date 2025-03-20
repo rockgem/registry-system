@@ -23,7 +23,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=<you_anon_key>
 ```
 
 [!IMPORTANT]
-**Inside your supabase project create a table with the name "users" and enable Realtime option**
+Inside your supabase project create a table with the name "users" and enable Realtime option
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
