@@ -6,7 +6,6 @@ export default function Dashboard() {
   return (
     <div className="max-w-[1100px] m-auto mt-16">
       <div className="flex justify-between">
-        <NavUser></NavUser>
         <div className="flex flex-col items-end justify-center">
           <Label className="text-1xl">Rock Software.</Label>
           <Label className="text-muted-foreground">People Registry System</Label>
