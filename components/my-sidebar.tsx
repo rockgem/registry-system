@@ -2,6 +2,9 @@ import { PersonStanding } from "lucide-react";
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider } from "./ui/sidebar";
 import NavUser from "./nav-user";
 import Link from "next/link";
+import { Label } from "./ui/label";
+import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 
 
@@ -11,7 +14,7 @@ export default function MySidebar(){
         <div>
             <Sidebar>
                 <SidebarHeader>
-                    Rock Software
+                   Rock Software.
                 </SidebarHeader>
 
                 <SidebarContent>
@@ -20,12 +23,12 @@ export default function MySidebar(){
                         <SidebarGroupContent>
                             <SidebarMenu>
                                 <SidebarMenuItem>
-                                    <SidebarMenuButton asChild><Link href={'#'}>People table</Link></SidebarMenuButton>
+                                    <SidebarMenuButton asChild><Link href={'/dashboard'}>People List</Link></SidebarMenuButton>
                                 </SidebarMenuItem>
                             </SidebarMenu>
                             <SidebarMenu>
                                 <SidebarMenuItem>
-                                    <SidebarMenuButton asChild><Link href={'#'}>Ayuda list</Link></SidebarMenuButton>
+                                    <SidebarMenuButton asChild><Link href={'/dashboard/ayuda-page'}>Ayuda Explorer</Link></SidebarMenuButton>
                                 </SidebarMenuItem>
                             </SidebarMenu>
                         </SidebarGroupContent>
