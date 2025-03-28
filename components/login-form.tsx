@@ -24,6 +24,7 @@ export function LoginForm({
   const [password, setPassword] = useState("");
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const router = useRouter();
+  const [error, setError] = useState('')
 
   function delay(ms: number): Promise<void> {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -47,6 +48,7 @@ export function LoginForm({
 
       router.push("/dashboard");
     } catch (error) {
+      setError(error.message)
       console.log(error || "An error occurred during login");
     } finally {
       setIsLoggingIn(false);
@@ -94,6 +96,7 @@ export function LoginForm({
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
+                <p className="text-center text-red-600">{error}</p>
                 <Button
                   type="submit"
                   disabled={isLoggingIn}
